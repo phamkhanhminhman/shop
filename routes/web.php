@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/test', 'testController@test');
 Route::get('/', 'user\homeController@home');
+Route::get('/list-product', 'user\list_product_controller@index');
+Route::get('/detail-product', 'user\detail_product_controller@index');
+
+
 Route::get('/admin', 'admin\homeAdminController@home');
